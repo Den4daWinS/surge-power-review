@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Your Call | Surge Power Website Review</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" />
+<style>
+:root { --red:#BF1E2E; --red-bright:#F2646E; --charcoal:#1F272E; --charcoal2:#151B20; --off:#F8F8F8; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Montserrat',sans-serif; color:var(--charcoal); background:#fff; }
+.hero { background:linear-gradient(135deg,var(--charcoal2),var(--charcoal)); color:#fff; padding:56px 24px 48px; text-align:center; }
+.hero img { height:52px; margin-bottom:22px; }
+.hero h1 { font-size:clamp(1.5rem,4vw,2.3rem); font-weight:800; }
+.hero h1 span { color:var(--red-bright); }
+.hero p { margin-top:14px; color:#C9CED2; max-width:640px; margin-left:auto; margin-right:auto; line-height:1.65; font-size:0.98rem; }
+.wrap { max-width:960px; margin:0 auto; padding:0 24px 80px; }
+.cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px; margin-top:-26px; }
+.card { background:#fff; border:1px solid #E6E9EC; border-top:4px solid var(--red); border-radius:10px; padding:26px 24px; box-shadow:0 14px 34px rgba(15,20,25,0.10); }
+.card h2 { font-size:1.05rem; font-weight:800; margin-bottom:8px; }
+.card p { font-size:0.9rem; line-height:1.6; color:#3a4a5e; margin-bottom:16px; }
+.btn { display:inline-block; background:var(--red); color:#fff; font-weight:700; font-size:0.85rem; letter-spacing:0.5px; padding:12px 22px; border-radius:5px; text-decoration:none; }
+.btn:hover { background:#a8182a; }
+.note { font-size:0.78rem; color:#6E6E6E; margin-top:10px; }
+h2.sec { margin:56px 0 6px; font-size:1.35rem; font-weight:800; }
+p.sec-sub { color:#555; font-size:0.92rem; margin-bottom:22px; line-height:1.6; }
+.dir { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:18px; }
+.dir-group h4 { font-size:0.75rem; letter-spacing:2px; text-transform:uppercase; color:var(--red); margin-bottom:10px; }
+.dir-group a { display:block; color:var(--charcoal); text-decoration:none; font-size:0.9rem; padding:7px 0; border-bottom:1px solid #EEF0F2; }
+.dir-group a:hover { color:var(--red); }
+.entry { border-left:3px solid #E6E9EC; padding:0 0 30px 22px; position:relative; }
+.entry::before { content:''; position:absolute; left:-7.5px; top:4px; width:12px; height:12px; border-radius:50%; background:var(--red); }
+.entry-date { font-size:0.75rem; font-weight:700; letter-spacing:1.5px; color:#6E6E6E; }
+.entry h3 { font-size:1.05rem; font-weight:800; margin:4px 0 10px; }
+.entry p, .entry li { font-size:0.9rem; line-height:1.7; color:#3a4a5e; margin-bottom:8px; }
+.entry ul { margin:0 0 8px 20px; }
+.entry code { background:var(--off); padding:1px 5px; border-radius:3px; font-size:0.82em; }
+.entry a { color:var(--red); word-break:break-all; }
+footer { background:var(--charcoal2); color:#919191; text-align:center; padding:26px; font-size:0.8rem; }
+.ask { display:flex; align-items:center; justify-content:space-between; gap:14px; background:#FFF9F0; border:1px solid #F0E2CC; border-left:4px solid #E8A33D; border-radius:6px; padding:10px 16px; margin-top:14px; font-size:0.88rem; color:#3a4a5e; }
+.ask a { flex-shrink:0; background:var(--red); color:#fff; font-weight:700; font-size:0.78rem; padding:8px 14px; border-radius:5px; text-decoration:none; }
+.ask a:hover { background:#a8182a; }
+.dcard { display:flex; gap:18px; background:#FFF9F0; border:1px solid #F0E2CC; border-left:4px solid #E8A33D; border-radius:8px; padding:20px 22px; margin-bottom:14px; }
+.dcard-num { font-family:'Montserrat',sans-serif; font-weight:800; color:#E8A33D; font-size:1.1rem; }
+.dcard-body h3 { font-size:1rem; font-weight:800; margin-bottom:6px; }
+.dcard-body p { font-size:0.9rem; line-height:1.65; color:#3a4a5e; margin-bottom:8px; }
+.dcard-q { font-weight:700; color:var(--charcoal); }
+.dcard-imgs { display:flex; gap:22px; margin:6px 0 12px; }
+.dcard-imgs figure { margin:0; text-align:center; }
+.dcard-imgs img { width:84px; height:84px; object-fit:contain; background:#fff; border:1px solid #E6E9EC; border-radius:10px; cursor:zoom-in; padding:6px; }
+.dcard-imgs figcaption { font-size:0.72rem; font-weight:700; color:#6E6E6E; margin-top:5px; }
+.dcard-text { width:100%; border:1px solid #E6E9EC; border-radius:6px; padding:10px 12px; font-family:'Montserrat',sans-serif; font-size:0.9rem; margin-bottom:10px; box-sizing:border-box; }
+.dcard-done { color:#1a7f37; font-weight:700; font-size:0.92rem; }
+.dcard-lbl { display:block; font-size:0.78rem; font-weight:700; color:#6E6E6E; margin:6px 0 4px; }
+.dcard-input { width:100%; border:1px solid #E6E9EC; border-radius:6px; padding:9px 12px; font-family:'Montserrat',sans-serif; font-size:0.9rem; box-sizing:border-box; }
+.dcard-btn-alt { background:#fff; color:var(--red); border:1px solid #E6E9EC; }
+.dcard-btn-alt:hover { border-color:var(--red); background:#fff; }
+.dcard-btns { display:flex; flex-wrap:wrap; gap:8px; }
+.dcard-btn { display:inline-block; background:var(--red); color:#fff; font-weight:700; font-size:0.8rem; padding:9px 16px; border-radius:5px; text-decoration:none; }
+.dcard-btn:hover { background:#a8182a; }
+.figs { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px; margin:16px 0 4px; }
+.figs figure { margin:0; }
+.figs img { width:100%; display:block; border:1px solid #E6E9EC; border-radius:6px; }
+.figs figcaption { font-size:0.78rem; color:#6E6E6E; line-height:1.55; margin-top:7px; }
+.figs figcaption strong, .figs figcaption b { color:var(--charcoal); }
+.see { margin-top:14px; font-size:0.84rem; }
+.see-label { color:#6E6E6E; font-weight:700; margin-right:8px; }
+.see a { display:inline-block; background:var(--off); border:1px solid #E6E9EC; color:var(--red); text-decoration:none; font-weight:600; padding:6px 13px; border-radius:20px; margin:4px 8px 0 0; }
+.see a:hover { border-color:var(--red); }
+.figs img.zoomable { cursor: zoom-in; }
+.lightbox { position:fixed; inset:0; background:rgba(15,20,25,0.88); display:none; align-items:center; justify-content:center; flex-direction:column; gap:14px; z-index:100; padding:28px; cursor:zoom-out; }
+.lightbox.open { display:flex; }
+.lightbox img { max-width:min(1250px, 94vw); max-height:84vh; border-radius:6px; box-shadow:0 24px 70px rgba(0,0,0,0.55); cursor:default; animation:lbin 0.18s ease; }
+.lightbox figcaption { color:#C9CED2; font-size:0.85rem; line-height:1.55; max-width:800px; text-align:center; cursor:default; }
+.lightbox-hint { color:#6E6E6E; font-size:0.72rem; letter-spacing:1px; text-transform:uppercase; }
+@keyframes lbin { from { transform:scale(0.96); opacity:0; } to { transform:scale(1); opacity:1; } }
+</style>
+</head>
+<body>
+<div class="hero" style="padding:42px 24px 36px">
+  <img src="logo-white.png" alt="Surge Power Services" />
+  <h1>Your <span>Call</span></h1>
+  <p>The open items that need your decision, Serge. Every button is one tap and your answer lands with Denis instantly. Texting him like always works too.</p>
+  <p style="margin-top:10px; font-size:0.85rem;"><a href="index.html" style="color:#F2646E; font-weight:700; text-decoration:none;">&larr; Back to the progress review</a></p>
+</div>
+<div class="wrap" style="padding-top:34px">
+  <h2 class="sec" id="your-call" style="margin-top:8px">Open items</h2><p class="sec-sub">Open items only you can decide. Every button is one tap: it opens a ready-to-send email with your pick already written. Adding a word of explanation before you hit send is welcome, and texting Denis like always works too.</p><div class="dcard" id="d-1"><div class="dcard-num">01</div><div class="dcard-body"><h3>The tab icon (favicon)</h3><p>Two options, both in your black and red. Option A is the SP bolt monogram from your timecard app, live on the preview right now (look at the browser tab). Option B is the bolt E from your current logo. Tap either image to enlarge it; the photo in the log below also shows both at real tab sizes.</p><div class="dcard-imgs"><figure><img src="img/favicon-a.png" alt="Option A" class="zoomable" tabindex="0" role="button" /><figcaption>Option A</figcaption></figure><figure><img src="img/favicon-b.png" alt="Option B" class="zoomable" tabindex="0" role="button" /><figcaption>Option B</figcaption></figure></div><p class="dcard-q">Which one do you want?</p><div class="dcard-btns"><a class="dcard-btn vote-btn" data-item="The tab icon (favicon)" data-response="Option A, the SP monogram" data-label="Option A, the SP monogram" href="mailto:denis@postsmith.agency?subject=Surge%20website%20vote%3A%20The%20tab%20icon%20%28favicon%29&body=My%20vote%20for%20The%20tab%20icon%20%28favicon%29%3A%20Option%20A%2C%20the%20SP%20monogram%0D%0A">Option A, the SP monogram</a><a class="dcard-btn vote-btn" data-item="The tab icon (favicon)" data-response="Option B, the bolt E" data-label="Option B, the bolt E" href="mailto:denis@postsmith.agency?subject=Surge%20website%20vote%3A%20The%20tab%20icon%20%28favicon%29&body=My%20vote%20for%20The%20tab%20icon%20%28favicon%29%3A%20Option%20B%2C%20the%20bolt%20E%0D%0A">Option B, the bolt E</a></div></div></div><div class="dcard" id="d-2"><div class="dcard-num">02</div><div class="dcard-body"><h3>Real testimonials</h3><p>As we discussed, the placeholder reviews are hidden until the real ones come in. Send each one with the details below so it can go on the site properly, and send as many as you want, one at a time. If it is easier, email them to Denis instead.</p><p class="dcard-q">Fill in one testimonial and hit send:</p><label class="dcard-lbl">Who said it (their name)</label><input class="dcard-input" data-field="visitor" type="text" /><label class="dcard-lbl">Their company</label><input class="dcard-input" data-field="company" type="text" /><label class="dcard-lbl">Which trade it is about (commercial electrical, HVAC, etc.)</label><input class="dcard-input" data-field="trade" type="text" /><label class="dcard-lbl">The testimonial itself, in their words</label><textarea class="dcard-input" data-field="quote" rows="3"></textarea><div class="dcard-btns"><a class="dcard-btn field-send" data-item="Real testimonials" data-label="Send this testimonial" href="mailto:denis@postsmith.agency?subject=Surge%20website%3A%20Real%20testimonials&body=Hey%20Denis%2C%0D%0A%0D%0AWho%20said%20it%20%28their%20name%29%3A%0D%0A%0D%0A%0D%0ATheir%20company%3A%0D%0A%0D%0A%0D%0AWhich%20trade%20it%20is%20about%20%28commercial%20electrical%2C%20HVAC%2C%20etc.%29%3A%0D%0A%0D%0A%0D%0AThe%20testimonial%20itself%2C%20in%20their%20words%3A%0D%0A%0D%0A">Send this testimonial</a><a class="dcard-btn dcard-btn-alt" href="mailto:denis@postsmith.agency?subject=Surge%20website%3A%20Real%20testimonials&body=Hey%20Denis%2C%0D%0A%0D%0AWho%20said%20it%20%28their%20name%29%3A%0D%0A%0D%0A%0D%0ATheir%20company%3A%0D%0A%0D%0A%0D%0AWhich%20trade%20it%20is%20about%20%28commercial%20electrical%2C%20HVAC%2C%20etc.%29%3A%0D%0A%0D%0A%0D%0AThe%20testimonial%20itself%2C%20in%20their%20words%3A%0D%0A%0D%0A">Email it instead</a></div></div></div><div class="dcard" id="d-3"><div class="dcard-num">03</div><div class="dcard-body"><h3>Where should contact form leads go?</h3><p>The contact form is one switch away from working. Every submission gets emailed the moment it is turned on.</p><p class="dcard-q">Which email address should receive them?</p><div class="dcard-btns"><textarea class="dcard-text" rows="3" placeholder="Type your answer here"></textarea><a class="dcard-btn vote-btn" data-item="Where should contact form leads go?" data-response="" data-label="Send your answer" href="mailto:denis@postsmith.agency?subject=Surge%20website%3A%20Where%20should%20contact%20form%20leads%20go%3F&body=Hey%20Denis%2C%0D%0A%0D%0AWhich%20email%20address%20should%20receive%20them%3F%0D%0AMy%20answer%3A%20%0D%0A">Send your answer</a></div></div></div><div class="dcard" id="d-4"><div class="dcard-num">04</div><div class="dcard-body"><h3>FAQ on the home page</h3><p>Your inner pages already have strong FAQ sections. The home page has none, and a short one there is the single biggest boost for showing up in AI answers (ChatGPT, Perplexity, Google AI).</p><p class="dcard-q">Add one?</p><div class="dcard-btns"><a class="dcard-btn vote-btn" data-item="FAQ on the home page" data-response="Yes, add it" data-label="Yes, add it" href="mailto:denis@postsmith.agency?subject=Surge%20website%20vote%3A%20FAQ%20on%20the%20home%20page&body=My%20vote%20for%20FAQ%20on%20the%20home%20page%3A%20Yes%2C%20add%20it%0D%0A">Yes, add it</a><a class="dcard-btn vote-btn" data-item="FAQ on the home page" data-response="No, skip it" data-label="No, skip it" href="mailto:denis@postsmith.agency?subject=Surge%20website%20vote%3A%20FAQ%20on%20the%20home%20page&body=My%20vote%20for%20FAQ%20on%20the%20home%20page%3A%20No%2C%20skip%20it%0D%0A">No, skip it</a></div></div></div><p style="margin-top:18px"><a class="btn" href="mailto:denis@postsmith.agency?subject=Surge%20website%3A%20my%20answers&body=Hey%20Denis%2C%20here%20are%20my%20answers%3A%0D%0A%0D%0A1.%20The%20tab%20icon%20%28favicon%29%0D%0A%20%20%20Which%20one%20do%20you%20want%3F%0D%0A%20%20%20My%20answer%3A%20%0D%0A%0D%0A2.%20Real%20testimonials%0D%0A%20%20%20Fill%20in%20one%20testimonial%20and%20hit%20send%3A%0D%0A%20%20%20My%20answer%3A%20%0D%0A%0D%0A3.%20Where%20should%20contact%20form%20leads%20go%3F%0D%0A%20%20%20Which%20email%20address%20should%20receive%20them%3F%0D%0A%20%20%20My%20answer%3A%20%0D%0A%0D%0A4.%20FAQ%20on%20the%20home%20page%0D%0A%20%20%20Add%20one%3F%0D%0A%20%20%20My%20answer%3A%20%0D%0A">Answer everything in one email</a></p>
+</div>
+<footer>Surge Power Services website project &middot; questions to Denis</footer>
+<div class="lightbox" id="lightbox" aria-modal="true" role="dialog">
+  <img id="lightbox-img" src="" alt="" />
+  <figcaption id="lightbox-cap"></figcaption>
+  <div class="lightbox-hint">Click anywhere outside the photo to close</div>
+</div>
+<script>
+  // Votes go straight to Denis's dashboard; if that is unreachable,
+  // the button falls back to opening a prefilled email instead.
+  (function () {
+    var URL = 'https://prospect.postsmith.agency/api/public/feedback';
+    function markDone(card, text) {
+      var zone = card.querySelector('.dcard-btns');
+      var ta = card.querySelector('.dcard-text');
+      if (ta) ta.style.display = 'none';
+      if (zone) zone.innerHTML = '<div class="dcard-done">Got it, your answer is in: ' + text + '</div>';
+    }
+    document.querySelectorAll('.vote-btn').forEach(function (btn) {
+      var card = btn.closest('.dcard');
+      var item = btn.getAttribute('data-item');
+      try {
+        var prev = localStorage.getItem('sps-answer-' + item);
+        if (prev) markDone(card, prev);
+      } catch (err) {}
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        var response = btn.getAttribute('data-response');
+        var ta = card.querySelector('.dcard-text');
+        if (ta) {
+          response = ta.value.trim();
+          if (!response) { ta.focus(); return; }
+        }
+        btn.textContent = 'Sending...';
+        fetch(URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ project: 'surge-website', item: item, response: response, website: '' })
+        }).then(function (r) {
+          if (!r.ok) throw new Error('bad status');
+          return r.json();
+        }).then(function () {
+          markDone(card, response);
+          try { localStorage.setItem('sps-answer-' + item, response); } catch (err) {}
+        }).catch(function () {
+          btn.textContent = btn.getAttribute('data-label');
+          window.location.href = btn.getAttribute('href');
+        });
+      });
+    });
+    // structured cards (testimonials): gather the fields, send, allow more
+    document.querySelectorAll('.field-send').forEach(function (btn) {
+      var card = btn.closest('.dcard');
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        var parts = [], missing = null;
+        card.querySelectorAll('.dcard-input').forEach(function (inp) {
+          var v = inp.value.trim();
+          if (!v && !missing) missing = inp;
+          parts.push(inp.getAttribute('data-field') + ': ' + v);
+        });
+        if (missing) { missing.focus(); return; }
+        btn.textContent = 'Sending...';
+        fetch(URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ project: 'surge-website', item: btn.getAttribute('data-item'),
+                                  response: parts.join(' | '), website: '' })
+        }).then(function (r) {
+          if (!r.ok) throw new Error('bad status');
+          return r.json();
+        }).then(function () {
+          card.querySelectorAll('.dcard-input').forEach(function (inp) { inp.value = ''; });
+          btn.textContent = 'Sent. Add another?';
+        }).catch(function () {
+          btn.textContent = btn.getAttribute('data-label');
+          window.location.href = btn.getAttribute('href');
+        });
+      });
+    });
+  })();
+  </script>
+<script>
+  (function () {
+    var lb = document.getElementById('lightbox');
+    var lbImg = document.getElementById('lightbox-img');
+    var lbCap = document.getElementById('lightbox-cap');
+    function openLb(img) {
+      lbImg.src = img.src;
+      lbImg.alt = img.alt;
+      lbCap.textContent = img.alt;
+      lb.classList.add('open');
+    }
+    function closeLb() { lb.classList.remove('open'); lbImg.src = ''; }
+    document.querySelectorAll('img.zoomable').forEach(function (img) {
+      img.addEventListener('click', function () { openLb(img); });
+      img.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openLb(img); }
+      });
+    });
+    lb.addEventListener('click', function (e) {
+      if (e.target !== lbImg) closeLb();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeLb();
+    });
+  })();
+</script>
+
+</body>
+</html>
