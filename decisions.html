@@ -49,9 +49,7 @@ footer { background:var(--charcoal2); color:#919191; text-align:center; padding:
 .dcard-ctx { display:inline-block; font-size:0.8rem; color:var(--red); font-weight:700; text-decoration:none; margin:0 0 10px; border-bottom:1px solid rgba(191,30,46,0.3); }
 .dcard-ctx:hover { border-bottom-color:var(--red); }
 .entry, .entry li { scroll-margin-top:90px; }
-@keyframes ctxflash { 0% { background:#FFE3B3; } 70% { background:#FFF3DC; } 100% { background:transparent; } }
-.entry:target { animation: ctxflash 3s ease 0.2s both; border-radius:0 8px 8px 0; }
-.entry li:target { animation: ctxflash 3s ease 0.2s both; border-radius:6px; padding:4px 8px; margin-left:-8px; }
+.entry li.marked { background:#FFF6E6; border-left:3px solid #E8A33D; border-radius:0 6px 6px 0; padding:8px 12px; margin:4px 0 4px -12px; list-style-position:inside; }
 .dcard-q { font-weight:700; color:var(--charcoal); }
 .dcard-imgs { display:flex; gap:22px; margin:6px 0 12px; }
 .dcard-imgs figure { margin:0; text-align:center; }
