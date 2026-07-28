@@ -197,6 +197,12 @@ footer { background:var(--charcoal2); color:#919191; text-align:center; padding:
 <li>Every page gained a skip-to-content link and proper page structure for assistive tech.</li>
 <li>The background video on the home page has a visible pause button (an accessibility requirement for auto-playing motion), and for visitors whose devices request reduced motion, the video and the scrolling logo strip stop automatically.</li>
 </ul><div class="figs"><figure><img src="img/form-errors-after.png" loading="lazy" alt="AFTER: press Send with missing fields and every problem is spelled out in words under its field. Before, nothing happened at all on most pages, and on the rest the button just refused silently." class="zoomable" tabindex="0" role="button" aria-label="Enlarge image" /><figcaption>AFTER: press Send with missing fields and every problem is spelled out in words under its field. Before, nothing happened at all on most pages, and on the rest the button just refused silently.</figcaption></figure></div><div class="see"><span class="see-label">See it yourself:</span><a href="https://den4dawins.github.io/surge-power-site/industrial-electrical-services" target="_blank" rel="noopener">Try it: press Send on an empty form</a></div></div>
+<div class="entry" id="e-mobile-pass-on-all-16-pages"><div class="entry-date">2026-07-28</div><h3>Mobile pass on all 16 pages</h3><p>Went through the whole site at phone size, since a lot of Surge's audience will open it from a job site on a phone.</p>
+<ul>
+<li>Fixed six photo and card grids that were hard-coded to desktop layouts: the crew photos and crew videos on the careers page were squeezing four-across into a phone screen (each about the width of a thumb), and the hiring-info cards on four job pages were cramming three-across. They now reflow to a comfortable two-across or stacked layout on small screens.</li>
+<li>Verified with an automated check that none of the 16 pages has sideways scroll on a phone: every page now fits the screen exactly.</li>
+<li>The home page also paints faster on slow connections: a lightweight preview frame shows instantly while the background video loads, and a redundant download instruction was removed. The video itself stays at its original quality.</li>
+</ul></div>
 </div>
 <footer>Surge Power Services website project &middot; questions to Denis</footer>
 <div class="lightbox" id="lightbox" aria-modal="true" role="dialog">
