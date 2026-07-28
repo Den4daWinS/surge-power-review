@@ -48,8 +48,10 @@ footer { background:var(--charcoal2); color:#919191; text-align:center; padding:
 .dcard-body p { font-size:0.9rem; line-height:1.65; color:#3a4a5e; margin-bottom:8px; }
 .dcard-ctx { display:inline-block; font-size:0.8rem; color:var(--red); font-weight:700; text-decoration:none; margin:0 0 10px; border-bottom:1px solid rgba(191,30,46,0.3); }
 .dcard-ctx:hover { border-bottom-color:var(--red); }
-.entry { scroll-margin-top:24px; }
-.entry:target { background:#FFF9F0; border-left-color:#E8A33D; border-radius:0 8px 8px 0; padding-top:10px; padding-right:14px; }
+.entry, .entry li { scroll-margin-top:90px; }
+@keyframes ctxflash { 0% { background:#FFE3B3; } 70% { background:#FFF3DC; } 100% { background:transparent; } }
+.entry:target { animation: ctxflash 3s ease 0.2s both; border-radius:0 8px 8px 0; }
+.entry li:target { animation: ctxflash 3s ease 0.2s both; border-radius:6px; padding:4px 8px; margin-left:-8px; }
 .dcard-q { font-weight:700; color:var(--charcoal); }
 .dcard-imgs { display:flex; gap:22px; margin:6px 0 12px; }
 .dcard-imgs figure { margin:0; text-align:center; }
@@ -117,10 +119,10 @@ footer { background:var(--charcoal2); color:#919191; text-align:center; padding:
   <p class="sec-sub">The full log from day one to where we are now, in plain language. Ask me about any of it.</p>
   <div class="entry" id="e-site-audit"><div class="entry-date">2026-07-24</div><h3>Site audit</h3><p>Audited the site at surgepower.netlify.app top to bottom and delivered a written report (see <code>website-audit-for-serge-2026-07-24.md</code>). Highlights:</p>
 <ul>
-<li>Contact form is correctly built for Netlify's free form service; it only needs form detection switched on in the Netlify dashboard, an email notification added, and a test submission.</li>
+<li id="t-3">Contact form is correctly built for Netlify's free form service; it only needs form detection switched on in the Netlify dashboard, an email notification added, and a test submission.</li>
 <li>Accessibility (ADA/WCAG): found low-contrast text in several places, form fields with no labels, error signaling by red border only, no confirmation announcement for screen readers, and an autoplay hero video with no pause control.</li>
 <li>SEO: strong foundation already in place (titles, descriptions, local business data for Google). Found the social-share preview image pointing at a file that does not exist, and confirmed the SEO stays dormant until surgepower.com points at the new site.</li>
-<li>AI search: recommended a visible FAQ section, crawler text files (robots.txt, sitemap.xml, llms.txt), and a Google Business Profile.</li>
+<li id="t-4">AI search: recommended a visible FAQ section, crawler text files (robots.txt, sitemap.xml, llms.txt), and a Google Business Profile.</li>
 </ul><div class="see"><span class="see-label">See it yourself:</span><a href="https://surgepower.netlify.app/" target="_blank" rel="noopener">The original site that was audited</a></div><div class="ask"><span>Waiting on your call: <strong>Which email should receive form leads?</strong></span><a href="decisions.html#d-3">Answer it</a></div></div>
 <div class="entry" id="e-complete-local-working-copy"><div class="entry-date">2026-07-24</div><h3>Complete local working copy</h3><ul>
 <li>Pulled a complete mirror of the live site: all 16 pages and every asset (95 files), byte-verified identical against the live server. Placed under version control (git) so every change is tracked and reversible.</li>
