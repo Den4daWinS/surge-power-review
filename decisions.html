@@ -58,6 +58,10 @@ footer { background:var(--charcoal2); color:#919191; text-align:center; padding:
 .dcard-imgs figcaption { font-size:0.72rem; font-weight:700; color:#6E6E6E; margin-top:5px; }
 .dcard-text { width:100%; border:1px solid #E6E9EC; border-radius:6px; padding:10px 12px; font-family:'Montserrat',sans-serif; font-size:0.9rem; margin-bottom:10px; box-sizing:border-box; }
 .dcard-done { color:#1a7f37; font-weight:700; font-size:0.92rem; }
+.dcard-open { background:#fff; border-color:#E6E9EC; border-left-color:var(--red); margin-top:26px; }
+.dcard-open .dcard-num { color:var(--red); font-size:1.25rem; }
+.note-input { width:100%; border:1px solid #E6E9EC; border-radius:6px; padding:11px 13px; font-family:'Montserrat',sans-serif; font-size:0.92rem; box-sizing:border-box; margin-bottom:12px; }
+.note-input:focus { outline:2px solid var(--red); outline-offset:1px; }
 .dcard-lbl { display:block; font-size:0.78rem; font-weight:700; color:#6E6E6E; margin:6px 0 4px; }
 .dcard-input { width:100%; border:1px solid #E6E9EC; border-radius:6px; padding:9px 12px; font-family:'Montserrat',sans-serif; font-size:0.9rem; box-sizing:border-box; }
 .dcard-btn-alt { background:#fff; color:var(--red); border:1px solid #E6E9EC; }
@@ -87,11 +91,12 @@ footer { background:var(--charcoal2); color:#919191; text-align:center; padding:
 <div class="hero" style="padding:42px 24px 36px">
   <img src="logo-white.png" alt="Surge Power Services" />
   <h1>Your <span>Call</span></h1>
-  <p>The open items that need your decision, Serge. Every button is one tap and your answer lands with Denis instantly. Texting him like always works too.</p>
+  <p>The open items that need your decision, Serge. Every button is one tap and your answer lands with Denis instantly. There is also a box at the bottom for anything else you want to say. Texting him like always works too.</p>
   <p style="margin-top:10px; font-size:0.85rem;"><a href="index.html" style="color:#F2646E; font-weight:700; text-decoration:none;">&larr; Back to the progress review</a></p>
 </div>
 <div class="wrap" style="padding-top:34px">
   <h2 class="sec" id="your-call" style="margin-top:8px">Open items</h2><p class="sec-sub">Open items only you can decide. Every button is one tap: it opens a ready-to-send email with your pick already written. Adding a word of explanation before you hit send is welcome, and texting Denis like always works too.</p><div class="dcard" id="d-1"><div class="dcard-num">01</div><div class="dcard-body"><h3>The tab icon (favicon)</h3><p>Two options, both in your black and red. Option A is the SP bolt monogram from your timecard app, live on the preview right now (look at the browser tab). Option B is the bolt E from your current logo. Tap either image to enlarge it; the photo in the log below also shows both at real tab sizes.</p><div class="dcard-imgs"><figure><img src="img/favicon-a.png" alt="Option A" class="zoomable" tabindex="0" role="button" /><figcaption>Option A</figcaption></figure><figure><img src="img/favicon-b.png" alt="Option B" class="zoomable" tabindex="0" role="button" /><figcaption>Option B</figcaption></figure></div><a class="dcard-ctx" href="index.html#t-1">Full context in the progress report &raquo;</a><p class="dcard-q">Which one do you want?</p><div class="dcard-btns"><a class="dcard-btn vote-btn" data-item="The tab icon (favicon)" data-response="Option A, the SP monogram" data-label="Option A, the SP monogram" href="mailto:denis@postsmith.agency?subject=Surge%20website%20vote%3A%20The%20tab%20icon%20%28favicon%29&body=My%20vote%20for%20The%20tab%20icon%20%28favicon%29%3A%20Option%20A%2C%20the%20SP%20monogram%0D%0A">Option A, the SP monogram</a><a class="dcard-btn vote-btn" data-item="The tab icon (favicon)" data-response="Option B, the bolt E" data-label="Option B, the bolt E" href="mailto:denis@postsmith.agency?subject=Surge%20website%20vote%3A%20The%20tab%20icon%20%28favicon%29&body=My%20vote%20for%20The%20tab%20icon%20%28favicon%29%3A%20Option%20B%2C%20the%20bolt%20E%0D%0A">Option B, the bolt E</a></div></div></div><div class="dcard" id="d-2"><div class="dcard-num">02</div><div class="dcard-body"><h3>Real testimonials</h3><p>As we discussed, the placeholder reviews are hidden until the real ones come in. Send each one with the details below so it can go on the site properly, and send as many as you want, one at a time. If it is easier, email them to Denis instead.</p><a class="dcard-ctx" href="index.html#t-2">Full context in the progress report &raquo;</a><p class="dcard-q">Fill in one testimonial and hit send:</p><label class="dcard-lbl">Who said it (their name)</label><input class="dcard-input" data-field="visitor" type="text" /><label class="dcard-lbl">Their company</label><input class="dcard-input" data-field="company" type="text" /><label class="dcard-lbl">Which trade it is about (commercial electrical, HVAC, etc.)</label><input class="dcard-input" data-field="trade" type="text" /><label class="dcard-lbl">The testimonial itself, in their words</label><textarea class="dcard-input" data-field="quote" rows="3"></textarea><div class="dcard-btns"><a class="dcard-btn field-send" data-item="Real testimonials" data-label="Send this testimonial" href="mailto:denis@postsmith.agency?subject=Surge%20website%3A%20Real%20testimonials&body=Hey%20Denis%2C%0D%0A%0D%0AWho%20said%20it%20%28their%20name%29%3A%0D%0A%0D%0A%0D%0ATheir%20company%3A%0D%0A%0D%0A%0D%0AWhich%20trade%20it%20is%20about%20%28commercial%20electrical%2C%20HVAC%2C%20etc.%29%3A%0D%0A%0D%0A%0D%0AThe%20testimonial%20itself%2C%20in%20their%20words%3A%0D%0A%0D%0A">Send this testimonial</a><a class="dcard-btn dcard-btn-alt" href="mailto:denis@postsmith.agency?subject=Surge%20website%3A%20Real%20testimonials&body=Hey%20Denis%2C%0D%0A%0D%0AWho%20said%20it%20%28their%20name%29%3A%0D%0A%0D%0A%0D%0ATheir%20company%3A%0D%0A%0D%0A%0D%0AWhich%20trade%20it%20is%20about%20%28commercial%20electrical%2C%20HVAC%2C%20etc.%29%3A%0D%0A%0D%0A%0D%0AThe%20testimonial%20itself%2C%20in%20their%20words%3A%0D%0A%0D%0A">Email it instead</a></div></div></div><div class="dcard" id="d-3"><div class="dcard-num">03</div><div class="dcard-body"><h3>Where should contact form leads go?</h3><p>The contact form is one switch away from working. Every submission gets emailed the moment it is turned on.</p><a class="dcard-ctx" href="index.html#t-3">Full context in the progress report &raquo;</a><p class="dcard-q">Which email address should receive them?</p><div class="dcard-btns"><textarea class="dcard-text" rows="3" placeholder="Type your answer here"></textarea><a class="dcard-btn vote-btn" data-item="Where should contact form leads go?" data-response="" data-label="Send your answer" href="mailto:denis@postsmith.agency?subject=Surge%20website%3A%20Where%20should%20contact%20form%20leads%20go%3F&body=Hey%20Denis%2C%0D%0A%0D%0AWhich%20email%20address%20should%20receive%20them%3F%0D%0AMy%20answer%3A%20%0D%0A">Send your answer</a></div></div></div><div class="dcard" id="d-4"><div class="dcard-num">04</div><div class="dcard-body"><h3>FAQ on the home page</h3><p>Your inner pages already have strong FAQ sections. The home page has none, and a short one there is the single biggest boost for showing up in AI answers (ChatGPT, Perplexity, Google AI).</p><a class="dcard-ctx" href="index.html#t-4">Full context in the progress report &raquo;</a><p class="dcard-q">Add one?</p><div class="dcard-btns"><a class="dcard-btn vote-btn" data-item="FAQ on the home page" data-response="Yes, add it" data-label="Yes, add it" href="mailto:denis@postsmith.agency?subject=Surge%20website%20vote%3A%20FAQ%20on%20the%20home%20page&body=My%20vote%20for%20FAQ%20on%20the%20home%20page%3A%20Yes%2C%20add%20it%0D%0A">Yes, add it</a><a class="dcard-btn vote-btn" data-item="FAQ on the home page" data-response="No, skip it" data-label="No, skip it" href="mailto:denis@postsmith.agency?subject=Surge%20website%20vote%3A%20FAQ%20on%20the%20home%20page&body=My%20vote%20for%20FAQ%20on%20the%20home%20page%3A%20No%2C%20skip%20it%0D%0A">No, skip it</a></div></div></div><p style="margin-top:18px"><a class="btn" href="mailto:denis@postsmith.agency?subject=Surge%20website%3A%20my%20answers&body=Hey%20Denis%2C%20here%20are%20my%20answers%3A%0D%0A%0D%0A1.%20The%20tab%20icon%20%28favicon%29%0D%0A%20%20%20Which%20one%20do%20you%20want%3F%0D%0A%20%20%20My%20answer%3A%20%0D%0A%0D%0A2.%20Real%20testimonials%0D%0A%20%20%20Fill%20in%20one%20testimonial%20and%20hit%20send%3A%0D%0A%20%20%20My%20answer%3A%20%0D%0A%0D%0A3.%20Where%20should%20contact%20form%20leads%20go%3F%0D%0A%20%20%20Which%20email%20address%20should%20receive%20them%3F%0D%0A%20%20%20My%20answer%3A%20%0D%0A%0D%0A4.%20FAQ%20on%20the%20home%20page%0D%0A%20%20%20Add%20one%3F%0D%0A%20%20%20My%20answer%3A%20%0D%0A">Answer everything in one email</a></p>
+  <div class="dcard dcard-open"><div class="dcard-num">&#9998;</div><div class="dcard-body"><h3>Anything else on your mind?</h3><p>Questions, ideas, something you want changed, or anything you noticed while looking through the site. Type it here and it goes straight to Denis. It does not have to be short and there is no wrong thing to send.</p><textarea class="note-input" rows="4" placeholder="Type anything here"></textarea><div class="dcard-btns"><a class="dcard-btn note-send" data-item="Open feedback" data-label="Send to Denis" href="mailto:denis@postsmith.agency?subject=Surge%20website%3A%20a%20note%20from%20Serge&body=Hey%20Denis%2C%0D%0A%0D%0A">Send to Denis</a><a class="dcard-btn dcard-btn-alt" href="mailto:denis@postsmith.agency?subject=Surge%20website%3A%20a%20note%20from%20Serge&body=Hey%20Denis%2C%0D%0A%0D%0A">Email it instead</a></div></div></div>
 </div>
 <footer>Surge Power Services website project &middot; questions to Denis</footer>
 <div class="lightbox" id="lightbox" aria-modal="true" role="dialog">
@@ -136,6 +141,32 @@ footer { background:var(--charcoal2); color:#919191; text-align:center; padding:
         }).then(function () {
           markDone(card, response);
           try { localStorage.setItem('sps-answer-' + item, response); } catch (err) {}
+        }).catch(function () {
+          btn.textContent = btn.getAttribute('data-label');
+          window.location.href = btn.getAttribute('href');
+        });
+      });
+    });
+    // open feedback box: free-form note, send and clear for another
+    document.querySelectorAll('.note-send').forEach(function (btn) {
+      var card = btn.closest('.dcard');
+      var ta = card.querySelector('.note-input');
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        var text = ta.value.trim();
+        if (!text) { ta.focus(); return; }
+        btn.textContent = 'Sending...';
+        fetch(URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ project: 'surge-website', item: btn.getAttribute('data-item'),
+                                  response: text, website: '' })
+        }).then(function (r) {
+          if (!r.ok) throw new Error('bad status');
+          return r.json();
+        }).then(function () {
+          ta.value = '';
+          btn.textContent = 'Sent. Send another?';
         }).catch(function () {
           btn.textContent = btn.getAttribute('data-label');
           window.location.href = btn.getAttribute('href');

@@ -58,6 +58,10 @@ footer { background:var(--charcoal2); color:#919191; text-align:center; padding:
 .dcard-imgs figcaption { font-size:0.72rem; font-weight:700; color:#6E6E6E; margin-top:5px; }
 .dcard-text { width:100%; border:1px solid #E6E9EC; border-radius:6px; padding:10px 12px; font-family:'Montserrat',sans-serif; font-size:0.9rem; margin-bottom:10px; box-sizing:border-box; }
 .dcard-done { color:#1a7f37; font-weight:700; font-size:0.92rem; }
+.dcard-open { background:#fff; border-color:#E6E9EC; border-left-color:var(--red); margin-top:26px; }
+.dcard-open .dcard-num { color:var(--red); font-size:1.25rem; }
+.note-input { width:100%; border:1px solid #E6E9EC; border-radius:6px; padding:11px 13px; font-family:'Montserrat',sans-serif; font-size:0.92rem; box-sizing:border-box; margin-bottom:12px; }
+.note-input:focus { outline:2px solid var(--red); outline-offset:1px; }
 .dcard-lbl { display:block; font-size:0.78rem; font-weight:700; color:#6E6E6E; margin:6px 0 4px; }
 .dcard-input { width:100%; border:1px solid #E6E9EC; border-radius:6px; padding:9px 12px; font-family:'Montserrat',sans-serif; font-size:0.9rem; box-sizing:border-box; }
 .dcard-btn-alt { background:#fff; color:var(--red); border:1px solid #E6E9EC; }
@@ -247,6 +251,32 @@ footer { background:var(--charcoal2); color:#919191; text-align:center; padding:
         }).then(function () {
           markDone(card, response);
           try { localStorage.setItem('sps-answer-' + item, response); } catch (err) {}
+        }).catch(function () {
+          btn.textContent = btn.getAttribute('data-label');
+          window.location.href = btn.getAttribute('href');
+        });
+      });
+    });
+    // open feedback box: free-form note, send and clear for another
+    document.querySelectorAll('.note-send').forEach(function (btn) {
+      var card = btn.closest('.dcard');
+      var ta = card.querySelector('.note-input');
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        var text = ta.value.trim();
+        if (!text) { ta.focus(); return; }
+        btn.textContent = 'Sending...';
+        fetch(URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ project: 'surge-website', item: btn.getAttribute('data-item'),
+                                  response: text, website: '' })
+        }).then(function (r) {
+          if (!r.ok) throw new Error('bad status');
+          return r.json();
+        }).then(function () {
+          ta.value = '';
+          btn.textContent = 'Sent. Send another?';
         }).catch(function () {
           btn.textContent = btn.getAttribute('data-label');
           window.location.href = btn.getAttribute('href');
